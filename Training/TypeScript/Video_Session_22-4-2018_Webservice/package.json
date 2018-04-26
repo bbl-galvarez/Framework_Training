@@ -1,7 +1,6 @@
 {
   "name": "Video_Session_22-4-2018",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,8 +13,11 @@
     "@types/express": "^4.11.1",
     "@types/lodash": "^4.14.107",
     "cors": "^2.8.4",
-    "express": "^4.16.3",
     "lodash": "^4.17.5",
     "typescript-tools": "^0.3.1"
-  }
+  },
+  "devDependencies": {
+    "express": "^4.16.3"
+  },
+  "description": ""
 }
