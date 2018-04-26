@@ -1,0 +1,21 @@
+{
+  "name": "Assignment_Day_11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^5.0.1",
+    "typescript": "^2.8.1"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "got": "^8.3.0",
+    "typescript-tools": "^0.3.1"
+  }
+}

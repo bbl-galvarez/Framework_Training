@@ -1,0 +1,2 @@
+import{Atm} from './AtmClass';
+

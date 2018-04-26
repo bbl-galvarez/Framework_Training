@@ -1,0 +1,38 @@
+tsc --outFile ZooMain.js 
+
+ZooAnimals.ts ZooWild.ts Main.ts
+
+9718220
+
+npm install --save lodash
+npm install --save @types/lodash
+
+
+
+-----------------------------------------------
+19-04-2019
+ng serve --open (to open angular application)
+
+
+ng generate service services/atmService
+
+
+------------------------------------
+
+class with 2 methods for those 2 promises
+
+
+------------------------
+npm install rxjs --save
+npm install @types/rx --save
+
+
+ng new lab02
+ng generate service services/atmService --module=app
+
+ng serve --open
+
+----------------------------------------------------
+
+1. Changes to atm-service.service.ts to add the necessary functions
+2. Changes to app.module.ts to add the atm service as a provider

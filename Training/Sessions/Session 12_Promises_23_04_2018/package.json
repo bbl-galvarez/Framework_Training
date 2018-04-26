@@ -1,0 +1,8 @@
+{
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "tools": "0.0.0",
+    "typescript": "^2.8.3"
+  }
+}

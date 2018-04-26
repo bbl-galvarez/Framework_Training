@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var atm_1 = require("./atm");
+var atmInstance = new atm_1.Atm();
+var balance = 0;
+var accountToQuery = '12345-1';
+var result;
+balance = atmInstance.getCurrentBalance(accountToQuery);
+console.log('Balance of ' + accountToQuery + ' = ' + balance);
+balance = atmInstance.withDraw(accountToQuery, 300);
+console.log('Balance of ' + accountToQuery + ' = ' + balance + ' After ATM Withdraw');
+balance = atmInstance.deposit(accountToQuery, 200);
+console.log('Balance of ' + accountToQuery + ' = ' + balance + ' After ATM Deposit');
+result = atmInstance.getLastOperations(accountToQuery).transactions;
+console.log('Showing Operations!!!');
+console.log(result);

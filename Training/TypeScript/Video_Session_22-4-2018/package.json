@@ -1,0 +1,17 @@
+{
+  "name": "Video_Session_22-4-2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/lodash": "^4.14.107",
+    "lodash": "^4.17.5",
+    "typescript-tools": "^0.3.1"
+  }
+}
