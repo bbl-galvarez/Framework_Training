@@ -1,0 +1,19 @@
+
+<div class="jumbotron text-center">
+  <h1> {{title}} </h1>
+  <p>We are building our ATM Machine step by step</p>
+  
+</div>
+
+<div class="container">
+  <div class="row">
+       <div class="col-sm-6">
+        <h3>{{currentOperation}}</h3>
+        <p>Acct No. {{atmResponse.accountNumber}}</p>
+        <p>Current Balance {{atmResponse.currentBalance | currency }}</p>
+       </div>
+       <div class="col-sm-6">
+                 <app-transaction-list></app-transaction-list>
+       </div>
+  </div>
+</div>

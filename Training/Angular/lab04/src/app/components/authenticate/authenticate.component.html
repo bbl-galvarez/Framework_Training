@@ -1,0 +1,20 @@
+<div class="container">
+
+  <form [formGroup] = "theForm" {ngSubmit} = "startOperations()">
+    <div class="formGroup">
+      <label class="center-block">Account Number
+        <input formControlName = "accountNumber">
+      </label>
+
+      <div style="color:red" *ngIf = "theForm.get('accountNumber').hasError('required')
+      &&(theForm.get('accountNumber').dirty ||
+         theForm.get(accountNumber).touched
+         )
+      "
+      > please provide an account number</div>
+
+      <button type="submit" class="btn btn-primary" [disabled]= "!theForm.valid"> Start </button>
+    </div>
+  </form>
+
+</div>

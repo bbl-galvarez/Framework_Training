@@ -1,0 +1,27 @@
+{
+  "name": "mongointegration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./build/index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cors": "^2.8.3",
+    "@types/express": "^4.11.1",
+    "@types/lodash": "^4.14.107",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "lodash": "^4.17.5",
+    "mongodb": "^3.0.7",
+    "typescript-tools": "^0.3.1"
+  },
+  "devDependencies": {
+    "@types/es6-promise": "^3.3.0",
+    "@types/mongodb": "^3.0.17"
+  }
+}
