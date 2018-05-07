@@ -13,7 +13,7 @@ export class SayDynamicBoldComponent implements OnInit {
   constructor(private route : ActivatedRoute) { }
 
   ngOnInit() {
-    this.route.params.subscribe(dataparams =>{this.paramvalue = dataparams.params});
+    this.route.params.subscribe(dataparams =>{this.paramvalue = dataparams['name']});
   }
 
 }

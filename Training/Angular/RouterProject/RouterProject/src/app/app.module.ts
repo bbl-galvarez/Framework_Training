@@ -9,7 +9,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const MyRoutes : Routes = [
   {path : 'saylight', component : SayLightComponent},
-  {path : 'saydynamicbold', component : SayDynamicBoldComponent}
+  {path : 'saydynamicbold/:name', component : SayDynamicBoldComponent}
 ]
 
 @NgModule({
