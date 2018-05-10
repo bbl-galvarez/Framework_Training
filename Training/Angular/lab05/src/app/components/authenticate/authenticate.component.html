@@ -1,0 +1,34 @@
+<div class="container text-center">
+
+  <form [formGroup] = "theForm" (ngSubmit)="startOperations()">
+
+    <div class="form-group">
+
+        <label class="center-block">Card Number
+          <input class="form-control" formControlName="accountNumber">
+        </label> 
+         <div class="alert alert-warning" *ngIf="showInvalidAccount()">Please provide a card number</div>
+         
+    </div>
+    <div class="form-group">
+
+         <label class="center-block">Pin Number
+          <input class="form-control" type="password" formControlName="pinNumber">
+        </label> 
+         <div class="alert alert-warning" *ngIf="showInvalidPin()">Please provide your PIN number</div>
+         
+    </div>
+    <div class="form-group">
+
+         <div class="alert alert-warning" *ngIf="this.atmService.accountValid == false" >
+                 Invalid Card Number
+         </div>   
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary btn-lg" [disabled]="!theForm.valid"> Authenticate</button> 
+    </div>
+
+  </form>
+ 
+</div>

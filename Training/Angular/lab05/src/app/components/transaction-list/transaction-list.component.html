@@ -1,0 +1,14 @@
+<table class="table table-striped" *ngIf="showPanel()">
+  <thead>
+    <th>Date</th>
+    <th>Type</th>
+    <th>Amount</th>
+  </thead>
+  <tbody>
+        <tr *ngFor="let item of atmTransactions.transactions">
+          <td>{{item.dateOfTransaction }} </td>
+          <td>{{item.transactionType}}</td>
+          <td>{{item.amount}}</td>
+        </tr>
+  </tbody>
+</table>
