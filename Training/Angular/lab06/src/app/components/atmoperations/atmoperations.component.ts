@@ -42,7 +42,7 @@ export class AtmoperationsComponent implements OnInit {
            
   }
 
-  performOperation(){
+  evaluateOperations(){
     let acctNumber = this.atmService.getAccountNumber();
 
     this.route.params.subscribe(data=>{

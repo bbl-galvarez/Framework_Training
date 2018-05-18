@@ -1,0 +1,10 @@
+<div *ngIf="showPanel()" class="container">
+ 
+<h3>{{title}}</h3>
+<form [formGroup]="theForm" (ngSubmit)="doOperation(theForm)">
+
+     <input formControlName="amount" placeholder="Enter amount">
+      <button type="submit">Confirm</button>
+ </form>
+
+</div>
