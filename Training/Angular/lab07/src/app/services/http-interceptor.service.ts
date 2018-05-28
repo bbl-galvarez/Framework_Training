@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
-import { HttpInterceptor,HttpRequest,HttpHandler ,HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpInterceptor,HttpRequest,HttpHandler ,HttpHeaders } from '@angular/common/http';
 import { environment } from '../../environments/environment'; 
 import { AtmServiceService } from '../services/atm-service.service';
 
 @Injectable()
 export class HttpInterceptorService implements HttpInterceptor {
 
-    constructor(public atmService: AtmServiceService) { }
+    constructor(public atmService: AtmServiceService,
+                public http: HttpClient) { }
 
     intercept(req: HttpRequest<any>, next: HttpHandler) {
     
