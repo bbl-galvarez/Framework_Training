@@ -1,0 +1,35 @@
+<!--
+  Generated template for the DepositPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Perform a Deposit</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <h3>Deposit Amount</h3>
+
+  <form [formGroup]="depositForm" (ngSubmit)="performDeposit()">
+      <ion-list>
+    
+          <ion-item>
+            <ion-label floating>Deposit Amount</ion-label>
+            <ion-input type="number" formControlName="amount"></ion-input>
+          </ion-item>
+
+          <div>
+            <button ion-button black type="submit" [disabled]="!depositForm.valid">Submit</button>
+          </div>
+    
+        </ion-list>
+  </form>
+
+</ion-content>

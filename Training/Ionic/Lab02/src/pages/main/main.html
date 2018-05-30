@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Gustavo Alvarez ATM</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome {{getAccountName()}}</h2>
+  <h2>Balance is {{getCurrentBalance()}}</h2>
+
+  <button ion-button (click)="makeDeposit()">Deposit</button>
+  <button ion-button (click)="makeWithdraw()">Withdraw</button> 
+
+
+ <!--<form [formGroup]="withdrawForm" (ngSubmit)="doWithdraw()">
+
+  <button ion-button block  type="submit">Deposit</button>
+
+  <ion-list>  
+    <div padding>
+        <button ion-button block  type="submit">Withdraw</button>
+    </div>
+
+    <ion-label>Withdrawal Amount</ion-label>
+    <ion-item>
+         <ion-input type="text" placeHolder="enter withdrawl amount" 
+                    formControlName="txnAmount2">
+          </ion-input>
+   </ion-item>
+  </ion-list>
+</form> -->
+
+</ion-content>
